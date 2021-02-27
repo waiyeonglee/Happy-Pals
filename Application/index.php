@@ -43,7 +43,7 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Happy-Pals.html" style="padding: 10px 20px;">Happy Pals</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.php" style="padding: 10px 20px;">Happy Pals</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="login.php" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
           </div>
@@ -51,7 +51,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Happy-Pals.html" style="padding: 10px 20px;">Happy Pals</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.php" style="padding: 10px 20px;">Happy Pals</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="login.php" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
               </div>
@@ -66,7 +66,7 @@
         <h1 class="u-text u-title u-text-2">Happy Pals</h1>
         <p class="u-large-text u-text u-text-variant u-text-3">Improve your mental health with our all-in-one web app!</p>
         <p class="u-large-text u-text u-text-variant u-text-4">Improve your mental health with our all-in-one web app!</p>
-        <a href="Happy-Pals.html#sec-7153" data-page-id="10901810" class="u-btn u-button-style u-palette-2-base u-btn-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Read More</a>
+        <a href="index.php#sec-7153" data-page-id="10901810" class="u-btn u-button-style u-palette-2-base u-btn-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Read More</a>
       </div>
     </section>
     <section class="u-clearfix u-section-2" id="sec-7153">

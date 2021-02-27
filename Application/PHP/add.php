@@ -4,7 +4,7 @@ session_start();
 
 // Demand a SESSION
 if ( ! isset($_SESSION['account']) ) {
-    die('ACCESS DENIED - PLEASE LOG IN!<br/><br/>Click <a href="Happy Pals.html">here</a> for the main page');
+    die('ACCESS DENIED - PLEASE LOG IN!<br/><br/>Click <a href="./">here</a> for the main page');
 }
 
 require_once "bootstrap.php"; require_once "pdo.php";

@@ -10,11 +10,11 @@ handlers:
   upload: .+\.(php|html|css|js|jpeg|jpg|png)$
 
 # Serve your app through a front controller at index.php or public/index.php.
-- url: .*
+- url: /.*
   script: auto
  
 entrypoint:
-  Happy-Pals.html
+  index.php
    
 env_variables:
   CLOUDSQL_USER: root

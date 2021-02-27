@@ -2,14 +2,8 @@
 
 session_start();
 
-if ( isset($_POST['cancel'] ) ) {
-    // Redirect the browser to game.php
-    header("Location: index.php");
-    return;
-}
-
+require_once "pdo.php"; 
 $salt = 'XyZzy12*_';
-$stored_hash = '1a52e17fa899cf40fb04cfc42e6352f1';  // Pw is php123
 
 // Check to see if we have some POST data, if we do process it
 if ( isset($_POST['username']) && isset($_POST['password']) ) {
@@ -19,18 +13,34 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 		header( 'Location: login.php' ) ;
 		return;	
     } else {
-        $check = hash('md5', $salt.$_POST['password']);
-		if ( $check == $stored_hash ) {
+		$check = hash('md5', $salt.$_POST['password']); // Hashed password
+		$stmt = $pdo->prepare("SELECT hashed_password FROM account_data where username = :xyz");
+		$stmt->execute(array(":xyz" => $_POST['username']));
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		if ( $row === false ) {   // New user
 			$_SESSION['account'] = $_POST['username'];
-			error_log("Login success ".$_POST['username']);
-			header( 'Location: index.php' );
+			error_log("New account created, success ".$_POST['username']);
+			$stmt = $pdo->prepare('INSERT INTO account_data (username, hashed_password) VALUES (:un, :hp)');
+			$stmt->execute(array(
+				':un' => $_POST['username'],
+				':hp' => $check)
+			);
+			header('Location: main.php');
 			return;
 		} else {
-            $_SESSION['error'] = "Incorrect password";
-			error_log("Login fail ".$_POST['username']." ".$check);
-			header( 'Location: login.php' ) ;
-			return;
-        }
+			$hp = htmlentities($row['hashed_password']);
+			if ( $check == $hp ) {
+				$_SESSION['account'] = $_POST['username'];
+				error_log("Login success ".$_POST['username']);
+				header( 'Location: main.php' );
+				return;
+			} else {
+				$_SESSION['error'] = "Incorrect password";
+				error_log("Login fail ".$_POST['username']." ".$check);
+				header( 'Location: login.php' ) ;
+				return;
+			} 
+		}
     }
 }
 ?>
@@ -100,11 +110,11 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
       <div class="u-clearfix u-sheet u-sheet-1">
 	  <br/><br/><br/><br/><br/><br/>
         <h1>Please Log In / Sign Up</h1><br/>
-		  <center><form method="POST"><table border=0 style="text-align:left">
+		  <center><form method="POST"><table border=0 style="text-align:left; font-size:120%">
 			<tr><td><label for="name">Username</label>&nbsp;&nbsp;&nbsp;</td>
 			<td><input type="text" name="username" id="username" style="color:black;"></td></tr>
 			<tr><td><label for="id_1723">Password</label></td>
-			<td><input type="text" name="password" id="password" style="color:black;"></td></tr></table>
+			<td><input type="password" name="password" id="password" style="color:black;"></td></tr></table>
 			<br>
 			<br>
 			<?php

@@ -17,7 +17,7 @@ Several one-of-its-kind features have been implemented into this web application
 
 Bubbly Bot is equipped with basic conversational skills and could sense various emotions from a user, including anger, saddness, happiness or depression. When the user prompts a depression, sad or lonely message, Bubbly Bot will provide emotional and motivational support via motivational quotes and a helpline. Whenver the user is feeling down and under, Bubbly Bot will be there to comfort the user until he/she cheers up, and acts as a companion to support the user through ups and downs.
 
-<img src="https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png" width="500" height="500">
+<img src="https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png" width="400" height="500">
 
 ### Soothing Music Playlist :saxophone:
 

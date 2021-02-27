@@ -1,0 +1,28 @@
+runtime: php74 # Replace with php74 to use PHP 7.4
+
+runtime_config:
+  document_root: .
+
+handlers:
+# Serve a directory as a static resource.
+- url: /.
+  static_dir: 
+
+
+# Serve as static resources.
+- url: /(.+\.(php|html|css|js|jpeg|jpg|png))$
+  static_files: \1
+  upload: .+\.(php|html|css|js|jpeg|jpg|png)$
+
+# Serve your app through a front controller at index.php or public/index.php.
+- url: ./Happy-Pals.html
+  script: auto
+  
+ 
+ entrypoint:
+   Happy-Pals.html
+   
+ env_variables:
+   CLOUDSQL_USER: root
+   CLOUDSQL_PASSWORD: bwunny1234
+   CLOUDSQL_DSN: "mysql:dbname=happy_pals;unix_socket=/cloudsql/CONNECTION_NAME"

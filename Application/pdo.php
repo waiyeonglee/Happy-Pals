@@ -1,4 +1,8 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;port=3306;dbname=happy_pals', 'philip', 'boop');
+$dsn = getenv('CLOUDSQL_DSN');
+$user = getenv('CLOUDSQL_USER');
+$password = getenv('CLOUDSQL_PASSWORD');
+
+$pdo = new PDO($dsn, $user, $password);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>

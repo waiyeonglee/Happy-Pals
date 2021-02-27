@@ -7,13 +7,21 @@ Several one-of-its-kind features have been implemented into this web application
 
 # Features
 
+### Welcome & Login Page
+
+
+
 ### Chatbot - Bubbly Bot
 
 For the Chatbot Bubbly Bot, he is equipped with basic conversational skills such as greetings, and could sense whether a user is angry, sad, happy or feeling depressed. When the user prompts a depression, sad or lonely message, Bubbly Bot will provide emotional and motivational support via motivational quotes and a helpline. Whenver the user is feeling down and under, Bubbly Bot will be there to comfort the user until he/she cheers up, and acts as a companion to support the user through ups and downs.
 
-![image](https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png){:height="50%" width="50%"}
+![image](https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png | width=100)
 
+### Soothing Music Playlist
 
+### Imagery Meditation 
+
+### Just for Laughs Videos
 
 
 [Depression Statistics](https://www.google.com/search?q=mental+health+age-groups&rlz=1C1CHBF_enMY868MY868&oq=mental+health+age-groups&aqs=chrome..69i57j0i22i30l4j0i390l3.6415j0j7&sourceid=chrome&ie=UTF-8)

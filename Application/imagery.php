@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+// Demand a SESSION
+if ( ! isset($_SESSION['account']) ) {
+    die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login.php">log in</a> to access this page!');
+}
+
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -6,9 +17,9 @@
     <meta name="keywords" content="Here's something for your soul">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Imagery Meditation</title>
+    <title>Imagery</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Imagery-Meditation.css" media="screen">
+<link rel="stylesheet" href="Imagery.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.7.2, nicepage.com">
@@ -28,13 +39,13 @@
 		"url": "index.html",
 		"logo": "images/default-logo.png"
 }</script>
-    <meta property="og:title" content="Imagery Meditation">
+    <meta property="og:title" content="Imagery">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
   </head>
-  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-d1b2"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-d1b2"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1">
           <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
         </a>
@@ -49,9 +60,9 @@
           </div>
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="main.php" style="padding: 10px 20px;">Main</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Dance.html" style="padding: 10px 20px;">Dance</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Imagery-Meditation.html" style="padding: 10px 20px;">Imagery Meditation</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Music.html" style="padding: 10px 20px;">Music</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="dance.php" style="padding: 10px 20px;">Dance</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="imagery.php" style="padding: 10px 20px;">Imagery</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="chill_tunes.php" style="padding: 10px 20px;">Chill Tunes</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="logout.php" style="padding: 10px 20px;">Log Out</a>
 </li></ul>
           </div>
@@ -60,9 +71,9 @@
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="main.php" style="padding: 10px 20px;">Main</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Dance.html" style="padding: 10px 20px;">Dance</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Imagery-Meditation.html" style="padding: 10px 20px;">Imagery Meditation</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Music.html" style="padding: 10px 20px;">Music</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="dance.php" style="padding: 10px 20px;">Dance</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="imagery.php" style="padding: 10px 20px;">Imagery</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="chill_tunes.php" style="padding: 10px 20px;">Chill Tunes</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="logout.php" style="padding: 10px 20px;">Log Out</a>
 </li></ul>
               </div>

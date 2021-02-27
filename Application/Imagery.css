@@ -1,19 +1,19 @@
 .u-section-1 .u-sheet-1 {
-  min-height: 608px;
+  min-height: 780px;
 }
 
 .u-section-1 .u-text-1 {
   font-family: "Alex Brush";
   background-image: none;
   width: 717px;
-  margin: 17px auto 0;
+  margin: 47px auto 0;
 }
 
 .u-section-1 .u-gallery-1 {
-  width: 861px;
-  height: 506px;
+  width: 971px;
+  height: 571px;
   grid-gap: 10px 10px;
-  margin: 17px auto 16px;
+  margin: 30px auto 60px;
 }
 
 .u-section-1 .u-carousel-indicators-1 {
@@ -78,6 +78,12 @@
   right: 10px;
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-gallery-1 {
+    width: 940px;
+  }
 }
 
 @media (max-width: 991px) {

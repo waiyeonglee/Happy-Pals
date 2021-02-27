@@ -14,17 +14,17 @@ if ( ! isset($_SESSION['account']) ) {
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Good Ideas">
+    <meta name="keywords" content="Happy Pals, Mental Health">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Main</title>
+    <title>Dance</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Main.css" media="screen">
+<link rel="stylesheet" href="Dance.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.7.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
     
     <script type="application/ld+json">{
@@ -34,7 +34,7 @@ if ( ! isset($_SESSION['account']) ) {
 		"url": "index.html",
 		"logo": "images/default-logo.png"
 }</script>
-    <meta property="og:title" content="Main">
+    <meta property="og:title" content="Dance">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
@@ -77,38 +77,43 @@ if ( ! isset($_SESSION['account']) ) {
           </div>
         </nav>
       </div></header>
-    <section class="u-align-center u-clearfix u-video u-video-cover u-section-1" id="carousel_5405">
-      <div style="" class="u-background-video u-expanded u-video-cover">
-        <div class="embed-responsive embed-responsive-1">
-          <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/iia8HIsvqmw?playlist=iia8HIsvqmw&amp;loop=1&amp;mute=1&amp;showinfo=0&amp;controls=0&amp;start=0&amp;autoplay=1" frameborder="0" allowfullscreen=""></iframe>
-        </div>
-      </div>
-      <div class="u-expanded u-opacity u-opacity-60 u-palette-2-dark-2 u-shape u-shape-rectangle"></div>
-      <h1 class="u-text u-text-body-alt-color u-title u-text-1">Welcome <?echo $_SESSION['account']?></h1>
-      <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
-      <a href="#" class="u-btn u-btn-round u-button-style u-radius-50 u-btn-1">Scroll down</a>
-    </section>
-    <section class="u-align-center u-clearfix u-section-2" id="sec-565d">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-text u-text-1">Redeem your free gift</h2>
-        <div class="u-form u-form-1">
-          <form action="#" method="POST" class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px;" source="custom">
-            <div class="u-form-group u-form-name">
-              <label for="name-ef64" class="u-form-control-hidden u-label">Name</label>
-              <input type="text" placeholder="Name" id="name-ef64" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+    <section class="u-align-center u-clearfix u-image u-section-1" id="sec-4e5e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-custom-font u-font-raleway u-text u-text-1">Taking good care of your physical body also takes care of your mental wellbeing<br>
+          <br>
+          <span style="font-style: italic; font-size: 1.5rem;">Let us dance to some funny videos or complete a yoga session!</span>
+        </h3>
+        <div class="u-accordion u-expanded-width u-accordion-1">
+          <div class="u-accordion-item">
+            <a class="active u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-palette-1-light-2 u-text-body-alt-color u-text-hover-palette-1-light-2 u-accordion-link-1" id="link-accordion-7c0e" aria-controls="accordion-7c0e" aria-selected="true"> Video 1</a>
+            <div class="u-accordion-active u-accordion-pane u-align-left u-container-style u-accordion-pane-1" id="accordion-7c0e" aria-labelledby="link-accordion-7c0e">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="u-clearfix u-custom-html u-custom-html-1">
+                  <iframe width="1042" height="712" src="https://www.youtube.com/embed/-9EHdp1ynUU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+              </div>
             </div>
-            <div class="u-form-email u-form-group">
-              <label for="email-ef64" class="u-form-control-hidden u-label">Email</label>
-              <input type="email" placeholder="Email" id="email-ef64" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-palette-1-light-2 u-text-body-alt-color u-text-hover-palette-1-light-2 u-accordion-link-2" id="link-accordion-05cb" aria-controls="accordion-05cb" aria-selected="false"> Video 2</a>
+            <div class="u-accordion-pane u-align-left u-container-style u-accordion-pane-2" id="accordion-05cb" aria-labelledby="link-accordion-05cb">
+              <div class="u-container-layout u-valign-top u-container-layout-2">
+                <div class="u-clearfix u-custom-html u-custom-html-2">
+                  <iframe width="1042" height="712" src="https://www.youtube.com/embed/0EI-de9YWP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+              </div>
             </div>
-            <div class="u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-palette-1-light-2 u-text-body-alt-color u-text-hover-palette-1-light-2 u-accordion-link-3" id="link-accordion-a6bb" aria-controls="accordion-a6bb" aria-selected="false"> Video 3</a>
+            <div class="u-accordion-pane u-align-left u-container-style u-accordion-pane-3" id="accordion-a6bb" aria-labelledby="link-accordion-a6bb">
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-clearfix u-custom-html u-custom-html-3">
+                  <iframe width="1042" height="712" src="https://www.youtube.com/embed/hJbRpHZr_d0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+              </div>
             </div>
-            <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
-            <div class="u-form-send-error u-form-send-message">#FormSendError</div>
-            <input type="hidden" value="" name="recaptchaResponse">
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -124,10 +129,9 @@ if ( ! isset($_SESSION['account']) ) {
       <p class="u-text">
         <span>created with</span>
       </p>
-      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
-        <span>HTML Website Builder</span>
+      <a class="u-link" href="https://nicepage.com/" target="_blank">
+        <span>Website Builder Software</span>
       </a>. 
     </section>
-	<script src="https://cdn.cai.tools.sap/webchat/webchat.js" channelId="77397177-c0d8-4097-96bf-80223cc9e15c" token="a899d0693a1bf324d0cf8df4a4b40352" id="cai-webchat"></script>
   </body>
 </html>

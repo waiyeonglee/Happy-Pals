@@ -4,13 +4,13 @@
 ini_set('allow_url_fopen',1);
 switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
     case '/':
-        require 'index.php';
+        require 'index.html';
         break;
     case '/index':
-        require 'index.php';
+        require 'index.html';
         break;
-    case '/index.php':
-        require 'index.php';
+    case '/index.html':
+        require 'index.html';
         break;
     case '/login':
         require 'login.php';

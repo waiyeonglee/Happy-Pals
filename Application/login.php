@@ -2,6 +2,11 @@
 
 session_start();
 
+if ( isset($_SESSION['account']) ) {  // Auto login if session detected
+    header('Location: main.php');
+	return;
+}
+
 require_once "pdo.php"; 
 $salt = 'XyZzy12*_';
 
@@ -35,7 +40,7 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 				header( 'Location: main.php' );
 				return;
 			} else {
-				$_SESSION['error'] = "Incorrect password";
+				$_SESSION['error'] = "Incorrect password entered";
 				error_log("Login fail ".$_POST['username']." ".$check);
 				header( 'Location: login.php' ) ;
 				return;

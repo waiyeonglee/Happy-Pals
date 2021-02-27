@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+// Demand a SESSION
+if ( ! isset($_SESSION['account']) ) {
+    die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login.php">log in</a> to access this page!');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +20,6 @@
 <div class='container'>
 <h1>Welcome to Automobiles Database</h1>
 <?php // Do not put any HTML above this line
-
-session_start();
 
 if ( ! isset($_SESSION['account']) ) {
     echo ("<p><a href='login.php'>Please log in</a></p><p>Attempt to <a href='add.php'>add data</a> without logging in</p>");

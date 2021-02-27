@@ -17,6 +17,6 @@ entrypoint:
   handler.php
    
 env_variables:
-  CLOUDSQL_USER: root
-  CLOUDSQL_PASSWORD: bwunny1234
-  CLOUDSQL_DSN: "mysql:dbname=happy_pals; unix_socket=cloudsql/happy-pals:asia-southeast1:my-sql-happy-pals"
+  CLOUDSQL_USER: "root"
+  CLOUDSQL_PASSWORD: "bwunny1234"
+  CLOUDSQL_DSN: "mysql:dbname=happy_pals;unix_socket=/cloudsql/happy-pals:asia-southeast1:my-sql-happy-pals"

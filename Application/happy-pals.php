@@ -1,13 +1,33 @@
 <?php
 
 session_start();
+require_once "pdo.php";
+$new_msg = '';
 
 // Demand a SESSION
 if ( ! isset($_SESSION['account']) ) {
     die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login.php">log in</a> to access this page!');
 }
 
-unset($_SESSION['new_status']);
+if ( isset($_SESSION['new_status']) ) {
+	unset($_SESSION['new_status']);
+	$new_msg = '<span style="font-size:80%"> (NEW USER)</span>';
+}
+
+
+
+$stmt = $pdo->prepare("SELECT * FROM account_data where hashed_username = :xyz");
+$stmt->execute(array(":xyz" => $_SESSION['hashed_username']));
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+$dv = htmlentities($row['dance_viewed']);
+$iv = htmlentities($row['image_viewed']);
+$mv = htmlentities($row['music_viewed']);
+$tv = htmlentities($row['talk_viewed']);
+console.log($row);
+$allv = false;
+if ($dv+$iv+$mv+$tv == 4) {$allv = true;}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +107,7 @@ unset($_SESSION['new_status']);
         </div>
       </div>
       <div class="u-expanded u-opacity u-opacity-60 u-palette-2-dark-2 u-shape u-shape-rectangle"></div>
-      <h1 class="u-text u-text-body-alt-color u-title u-text-1">Welcome <?echo $_SESSION['account']?></h1>
+      <h1 class="u-text u-text-body-alt-color u-title u-text-1">Welcome <?echo $_SESSION['account'].$new_msg ?></h1>
       <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">Meet Bubbly Bot on the bottom right corner of your screen!</p>
       <a href="Happy-Pals.html#carousel_9878" data-page-id="299888393" class="u-btn u-btn-round u-button-style u-radius-50 u-btn-1" data-animation-name="hinge" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">Scroll down</a>
     </section>
@@ -104,14 +124,10 @@ unset($_SESSION['new_status']);
             </colgroup>
             <thead class="u-align-center u-palette-2-dark-1 u-table-header u-table-header-1">
               <tr style="height: 53px;">
-                <th class="u-border-2 u-border-palette-2-base u-table-cell">Dance</th>
-                <th class="u-border-2 u-border-palette-2-base u-table-cell"><b>Imagery</b>
-                </th>
-                <th class="u-border-2 u-border-palette-2-base u-table-cell"><b>Melodies</b>
-                </th>
-                <th class="u-border-2 u-border-palette-2-base u-table-cell"><b>Talk</b>
-                  <br>
-                </th>
+                <th class="u-border-2 u-border-palette-2-base u-table-cell"><b>Dance</b></th>
+                <th class="u-border-2 u-border-palette-2-base u-table-cell"><b>Imagery</b></th>
+                <th class="u-border-2 u-border-palette-2-base u-table-cell"><b>Melodies</b></th>
+                <th class="u-border-2 u-border-palette-2-base u-table-cell"><b>Talk</b><br></th>
               </tr>
             </thead>
             <tbody class="u-align-center u-table-body u-white u-table-body-1">

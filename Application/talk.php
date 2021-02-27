@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+// Demand a SESSION
+if ( ! isset($_SESSION['account']) ) {
+    die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login.php">log in</a> to access this page!');
+}
+
+if ( ! isset($_SESSION['all_visited']) ) {
+	$stmt = $pdo->prepare('UPDATE account_data SET talk_visited = :visited WHERE hashed_username = :hu');
+	$stmt->execute(array(':visited' => 1, ':hu' => $_SESSION['hashed_username']));
+}
+
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>

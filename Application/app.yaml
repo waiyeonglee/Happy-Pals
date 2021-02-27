@@ -13,10 +13,10 @@ handlers:
 - url: .*
   script: auto
  
- entrypoint:
-   Happy-Pals.html
+entrypoint:
+  Happy-Pals.html
    
- env_variables:
-   CLOUDSQL_USER: root
-   CLOUDSQL_PASSWORD: bwunny1234
-   CLOUDSQL_DSN: "mysql:dbname=happy_pals;unix_socket=/cloudsql/CONNECTION_NAME"
+env_variables:
+  CLOUDSQL_USER: root
+  CLOUDSQL_PASSWORD: bwunny1234
+  CLOUDSQL_DSN: "mysql:dbname=happy_pals;unix_socket=/cloudsql/CONNECTION_NAME"

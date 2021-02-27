@@ -12,7 +12,6 @@ handlers:
 # Serve your app through a front controller at index.php or public/index.php.
 - url: .*
   script: auto
-  
  
  entrypoint:
    Happy-Pals.html

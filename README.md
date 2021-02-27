@@ -1,5 +1,5 @@
-# Happy-Pals
-## Proudly presented to you by team Ekspansyion
+# Happy-Pals :laughing:
+#### Proudly presented to you by team Ekspansyion :stuck_out_tongue_closed_eyes:
 
 COVID-19 has affected every individual’s everyday lifestyle in one way or the other including personal and professional life, mental wellbeing, interaction with families, social life, etc. Focusing on the **Mental Health** issue, our team Ekspanyion, consisting of 3 members, *Philip Lee Hann Yung, Lee Wai Yeong* and *Lee Jinhen*, embarked on a journey of a lifetime to play our part in combating this issue by spurring our ideas via the SAP Cloud Track. Using PHP, HTML, CSS and JavaScript, we have developed a web application that caters to the mental wellbeing of our users. Our app showcases many ways to release stress and find out more about your mental health. The integrated chatbot within our web app is developed using SAP's proprietary Conversational AI platform.
 
@@ -7,11 +7,11 @@ Several one-of-its-kind features have been implemented into this web application
 
 # Features
 
-#### Chatbot - Bubbly Bot
+### Chatbot - Bubbly Bot
 
 For the Chatbot Bubbly Bot, he is equipped with basic conversational skills such as greetings, and could sense whether a user is angry, sad, happy or feeling depressed. When the user prompts a depression, sad or lonely message, Bubbly Bot will provide emotional and motivational support via motivational quotes and a helpline. Whenver the user is feeling down and under, Bubbly Bot will be there to comfort the user until he/she cheers up, and acts as a companion to support the user through ups and downs.
 
-![image](https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png)
+![image](https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png){:height="50%" width="50%"}
 
 
 

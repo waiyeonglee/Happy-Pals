@@ -25,17 +25,17 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
         require 'logout.php';
         break;
 	// separator
-	case '/chill_tunes':
-        require 'chill_tunes.php';
-        break;
-	case '/chill_tunes.php':
-        require 'chill_tunes.php';
-        break;
 	case '/dance':
         require 'dance.php';
         break;
 	case '/dance.php':
         require 'dance.php';
+        break;
+	case '/happy-pals':
+        require 'happy-pals.php';
+        break;
+	case '/happy-pals.php':
+        require 'happy-pals.php';
         break;
 	case '/imagery':
         require 'imagery.php';
@@ -43,11 +43,17 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
 	case '/imagery.php':
         require 'imagery.php';
         break;
-	case '/main':
-        require 'main.php';
+	case '/melodies':
+        require 'melodies.php';
         break;
-	case '/main.php':
-        require 'main.php';
+	case '/melodies.php':
+        require 'melodies.php';
+        break;
+	case '/talk':
+        require 'talk.php';
+        break;
+	case '/talk.php':
+        require 'talk.php';
         break;
     default:
         http_response_code(404);

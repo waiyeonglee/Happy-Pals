@@ -14,7 +14,7 @@ handlers:
   script: auto
  
 entrypoint:
-  index.php
+  handler.php
    
 env_variables:
   CLOUDSQL_USER: root

@@ -8,7 +8,7 @@ if ( isset($_SESSION['account']) ) {  // Auto login if session detected
 }
 
 require_once "pdo.php"; 
-$salt = 'XyZzy12*_';
+$salt = 'pingu12*_';
 
 // Check to see if we have some POST data, if we do process it
 if ( isset($_POST['username']) && isset($_POST['password']) ) {
@@ -18,30 +18,31 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 		header( 'Location: login.php' ) ;
 		return;	
     } else {
-		$check = hash('md5', $salt.$_POST['password']); // Hashed password
-		$stmt = $pdo->prepare("SELECT hashed_password FROM account_data where username = :xyz");
-		$stmt->execute(array(":xyz" => $_POST['username']));
+		$hp_current = hash('md5', $salt.$_POST['password']); // Hashed password
+		$hu_current = hash('md5', $salt.$_POST['username']); // Hashed username
+		$stmt = $pdo->prepare("SELECT hashed_password FROM account_data where hashed_username = :xyz");
+		$stmt->execute(array(":xyz" => $hu_current));
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 		if ( $row === false ) {   // New user
 			$_SESSION['account'] = $_POST['username'];
-			error_log("New account created, success ".$_POST['username']);
-			$stmt = $pdo->prepare('INSERT INTO account_data (username, hashed_password) VALUES (:un, :hp)');
+			error_log("New account created, success ".$hu_current);
+			$stmt = $pdo->prepare('INSERT INTO account_data (hashed_username, hashed_password) VALUES (:hu, :hp)');
 			$stmt->execute(array(
-				':un' => $_POST['username'],
-				':hp' => $check)
+				':hu' => $hu_current,
+				':hp' => $hp_current)
 			);
 			header('Location: main.php');
 			return;
 		} else {
 			$hp = htmlentities($row['hashed_password']);
-			if ( $check == $hp ) {
+			if ( $hp_current == $hp ) {
 				$_SESSION['account'] = $_POST['username'];
-				error_log("Login success ".$_POST['username']);
+				error_log("Login success ".$hu_current);
 				header( 'Location: main.php' );
 				return;
 			} else {
-				$_SESSION['error'] = "Incorrect password entered";
-				error_log("Login fail ".$_POST['username']." ".$check);
+				$_SESSION['error'] = "Incorrect password entered / Username has been taken";
+				error_log("Login fail ".$hu_current." ".$check);
 				header( 'Location: login.php' ) ;
 				return;
 			} 

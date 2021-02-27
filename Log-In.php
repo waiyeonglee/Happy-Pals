@@ -3,17 +3,16 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="INTUITIVE">
+    <meta name="keywords" content="Please Log In">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Happy Pals</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Happy-Pals.css" media="screen">
+<link rel="stylesheet" href="Log-In.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.7.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
     
     
     <script type="application/ld+json">{
@@ -23,7 +22,7 @@
 		"url": "index.html",
 		"logo": "images/default-logo.png"
 }</script>
-    <meta property="og:title" content="Happy Pals">
+    <meta property="og:title" content="Log In">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
@@ -44,7 +43,7 @@
           </div>
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Happy-Pals.html" style="padding: 10px 20px;">Happy Pals</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Application/login.php" style="padding: 10px 20px;">Log In / Sign Up</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Log-In.html" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
@@ -52,7 +51,7 @@
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Happy-Pals.html" style="padding: 10px 20px;">Happy Pals</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Application/login.php" style="padding: 10px 20px;">Log In / Sign Up</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Log-In.html" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
               </div>
             </div>
@@ -60,29 +59,62 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" id="sec-ab82" data-image-width="1280" data-image-height="853">
+    <section class="u-align-left u-clearfix u-image u-shading u-section-1" id="sec-34b0" data-image-width="1280" data-image-height="853" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-title u-text-1">Happy Pals</h1>
-        <p class="u-large-text u-text u-text-variant u-text-2">Improve your mental health with our all-in-one web app!</p>
-        <a href="#" class="u-btn u-button-style u-palette-2-base u-btn-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Read More</a>
-      </div>
-    </section>
-    <section class="u-clearfix u-section-2" id="sec-7153">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="400" data-image-height="265">
-                <div class="u-container-layout u-container-layout-1"></div>
-              </div>
-              <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
-                  <h2 class="u-text u-text-1">Sample Headline</h2>
-                  <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                  <a href="Application/login.php" class="u-border-2 u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50 u-btn-1">Get Started</a>
-                </div>
-              </div>
-            </div>
+        <div class="u-clearfix u-custom-html u-custom-html-1"><!--?php // Do not put any HTML above this line
+session_start();
+if ( isset($_POST['cancel'] ) ) {
+    // Redirect the browser to game.php
+    header("Location: index.php");
+    return;
+}
+$salt = 'XyZzy12*_';
+$stored_hash = '1a52e17fa899cf40fb04cfc42e6352f1';  // Pw is php123
+// Check to see if we have some POST data, if we do process it
+if ( isset($_POST['email']) && isset($_POST['pass']) ) {
+	unset($_SESSION['account']);
+    if ( strlen($_POST['email']) < 1 || strlen($_POST['pass']) < 1 ) {
+        $_SESSION['error'] = "User name and password are required";
+		header( 'Location: login.php' ) ;
+		return;
+    } else {
+        $check = hash('md5', $salt.$_POST['pass']);
+		if ( strpos($_POST['email'], '@') === FALSE ) {
+			$_SESSION['error'] = "Email must have an at-sign (@)";
+			header( 'Location: login.php' ) ;
+			return;
+        } elseif ( $check == $stored_hash ) {
+			$_SESSION['account'] = $_POST['email'];
+			error_log("Login success ".$_POST['email']);
+			header( 'Location: index.php' );
+			return;
+		} else {
+            $_SESSION['error'] = "Incorrect password";
+			error_log("Login fail ".$_POST['email']." ".$check);
+			header( 'Location: login.php' ) ;
+			return;
+        }
+    }
+}
+?--><!--?php require_once "bootstrap.php"; ?-->
+          <title></title>
+          <div class="container">
+            <h1>Please Log In</h1><!--?php
+if ( isset($_SESSION['error']) ) {
+    echo('<p style="color: red;"-->'.htmlentities($_SESSION['error'])."<p></p>\n");
+    unset($_SESSION['error']);
+}
+?&gt; <form method="POST">
+              <label for="nam">User Name</label>
+              <input type="text" name="email" id="nam">
+              <br>
+              <label for="id_1723">Password</label>
+              <input type="text" name="pass" id="id_1723">
+              <br>
+              <br>
+              <input type="submit" value="Log In">
+              <input type="submit" name="cancel" value="Cancel">
+            </form>
           </div>
         </div>
       </div>
@@ -90,17 +122,17 @@
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a68e"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        <p class="u-align-center u-small-text u-text u-text-variant u-text-1">© Happy Pals 2021</p>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Templates</span>
       </a>
       <p class="u-text">
         <span>created with</span>
       </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
+      <a class="u-link" href="https://nicepage.com/website-builder" target="_blank">
+        <span>Free Website Builder</span>
       </a>. 
     </section>
   </body>

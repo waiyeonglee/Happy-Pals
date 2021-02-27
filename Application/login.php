@@ -3,7 +3,7 @@
 session_start();
 
 if ( isset($_SESSION['account']) ) {  // Auto login if session detected
-    header('Location: main.php');
+    header('Location: main');
 	return;
 }
 
@@ -15,7 +15,8 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 	unset($_SESSION['account']);
     if ( strlen($_POST['username']) < 1 || strlen($_POST['password']) < 1 ) {
         $_SESSION['error'] = "Username and password are required";
-		header( 'Location: login.php' ) ;
+		header( 'Location: login' ) ;
+		
 		return;	
     } else {
 		$hp_current = hash('md5', $salt.$_POST['password']); // Hashed password
@@ -31,19 +32,19 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 				':hu' => $hu_current,
 				':hp' => $hp_current)
 			);
-			header('Location: main.php');
+			header('Location: main');
 			return;
 		} else {
 			$hp = htmlentities($row['hashed_password']);
 			if ( $hp_current == $hp ) {
 				$_SESSION['account'] = $_POST['username'];
 				error_log("Login success ".$hu_current);
-				header( 'Location: main.php' );
+				header( 'Location: main' );
 				return;
 			} else {
 				$_SESSION['error'] = "Incorrect password entered / Username has been taken";
 				error_log("Login fail ".$hu_current." ".$check);
-				header( 'Location: login.php' ) ;
+				header( 'Location: login' ) ;
 				return;
 			} 
 		}
@@ -95,16 +96,16 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.php" style="padding: 10px 20px;">Happy Pals</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="login.php" style="padding: 10px 20px;">Log In / Sign Up</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="./" style="padding: 10px 20px;">Happy Pals</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="login" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.php" style="padding: 10px 20px;">Happy Pals</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="login.php" style="padding: 10px 20px;">Log In / Sign Up</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./" style="padding: 10px 20px;">Happy Pals</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="login" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
               </div>
             </div>

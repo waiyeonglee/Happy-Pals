@@ -128,7 +128,7 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 				unset($_SESSION['error']);
 			}
 			?>
-			<button type="submit" formmethod="post" class="u-border-2 u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50 u-btn-1">Log In / Create New Account</button>
+			<button type="submit" formmethod="post" class="u-border-2 u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50">Log In / Create New Account</button>
 		  </form></center>
       </div>
     </section>

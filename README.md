@@ -9,19 +9,32 @@ Several one-of-its-kind features have been implemented into this web application
 
 ### Welcome & Login Page
 
+"Life is a first impression. You get one shot at it." As the saying goes, we have customized our welcome page as well as our login page to enhance the user's experience.
 
 
-### Chatbot - Bubbly Bot
 
-For the Chatbot Bubbly Bot, he is equipped with basic conversational skills such as greetings, and could sense whether a user is angry, sad, happy or feeling depressed. When the user prompts a depression, sad or lonely message, Bubbly Bot will provide emotional and motivational support via motivational quotes and a helpline. Whenver the user is feeling down and under, Bubbly Bot will be there to comfort the user until he/she cheers up, and acts as a companion to support the user through ups and downs.
+### Chatbot - Bubbly Bot 
 
-![image](https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png =24x48)
+Bubbly Bot is equipped with basic conversational skills and could sense various emotions from a user, including anger, saddness, happiness or depression. When the user prompts a depression, sad or lonely message, Bubbly Bot will provide emotional and motivational support via motivational quotes and a helpline. Whenver the user is feeling down and under, Bubbly Bot will be there to comfort the user until he/she cheers up, and acts as a companion to support the user through ups and downs.
 
-### Soothing Music Playlist
+<img src="https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png" width="100" height="100">
 
-### Imagery Meditation 
+### Soothing Music Playlist :saxophone:
 
-### Just for Laughs Videos
+Let your body move to the music as you relax and listen to our customized relaxing music playlist!
+
+
+
+### Imagery Meditation :deciduous_tree:
+
+Nature at heart, these visuals aim to provide relaxation, meditation and calms you down 
+
+
+
+### Just for Laughs Videos :laughing:
+
+Tune in to our Just for Laughs videos for a heartful of laughter and endless entertainment! 
+
 
 
 [Depression Statistics](https://www.google.com/search?q=mental+health+age-groups&rlz=1C1CHBF_enMY868MY868&oq=mental+health+age-groups&aqs=chrome..69i57j0i22i30l4j0i390l3.6415j0j7&sourceid=chrome&ie=UTF-8)

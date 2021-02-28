@@ -99,7 +99,7 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 20px;">Happy Pals</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a href="./" class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 20px;">Happy Pals</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="login" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
           </div>
@@ -107,7 +107,7 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;">Happy Pals</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./" style="padding: 10px 20px;">Happy Pals</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="login" style="padding: 10px 20px;">Log In / Sign Up</a>
 </li></ul>
               </div>

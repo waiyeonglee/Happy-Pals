@@ -12,7 +12,7 @@ Several one-of-its-kind features have been implemented into this web application
 
 "Life is a first impression. You get one shot at it." As the saying goes, we have customized our welcome page as well as our login page to enhance the user's experience.
 
-<img src= "https://user-images.githubusercontent.com/66330052/109404832-dcbe7980-79a4-11eb-9e0a-4d74e63fd114.png" width="350" height="500">
+<img src= "https://user-images.githubusercontent.com/66330052/109404832-dcbe7980-79a4-11eb-9e0a-4d74e63fd114.png" width="600" height="500">
 
 ### Chatbot - Bubbly Bot 
 
@@ -36,7 +36,7 @@ Nature at heart, these visuals aim to provide relaxation, meditation and calms y
 
 Tune in to our Just for Laughs/Dance videos for a heartful of laughter and endless entertainment! 
 
-<img src= "https://user-images.githubusercontent.com/66330052/109404845-f95ab180-79a4-11eb-8837-b156f93fd82d.png" width="350" height="500">
+<img src= "https://user-images.githubusercontent.com/66330052/109404845-f95ab180-79a4-11eb-8837-b156f93fd82d.png" width="600" height="500">
 
 # Technical Deployment
 

@@ -21,12 +21,11 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
     } else {
 		$hp_current = hash('md5', $salt.$_POST['password']); // Hashed password
 		$hu_current = hash('md5', $salt.$_POST['username']); // Hashed username
-		$stmt = $pdo->prepare("SELECT hashed_password FROM account_data where hashed_username = :xyz");
+		$stmt = $pdo->prepare("SELECT * FROM account_data where hashed_username = :xyz");
 		$stmt->execute(array(":xyz" => $hu_current));
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 		if ( $row === false ) {   // New user
 			$_SESSION['account'] = $_POST['username'];
-			$_SESSION['hashed_username'] = $hu_current;
 			$_SESSION['new_status'] = true;
 			error_log("New account created, success ".$hu_current);
 			$stmt = $pdo->prepare('INSERT INTO account_data (hashed_username, hashed_password) VALUES (:hu, :hp)');
@@ -34,13 +33,17 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 				':hu' => $hu_current,
 				':hp' => $hp_current)
 			);
+			$stmt = $pdo->prepare("SELECT user_id FROM account_data where hashed_username = :xyz");
+			$stmt->execute(array(":xyz" => $hu_current));
+			$row = $stmt->fetch(PDO::FETCH_ASSOC);
+			$_SESSION['user_id'] = $row['user_id'];
 			header('Location: happy-pals');
 			return;
 		} else {
 			$hp = htmlentities($row['hashed_password']);
 			if ( $hp_current == $hp ) {
 				$_SESSION['account'] = $_POST['username'];
-				$_SESSION['hashed_username'] = $hu_current;
+				$_SESSION['user_id'] = $row['user_id'];
 				error_log("Login success ".$hu_current);
 				header( 'Location: happy-pals' );
 				return;

@@ -4,12 +4,13 @@ session_start();
 
 // Demand a SESSION
 if ( ! isset($_SESSION['account']) ) {
-    die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login.php">log in</a> to access this page!');
+    die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login">log in</a> to access this page!');
 }
 
 if ( ! isset($_SESSION['all_visited']) ) {
-	$stmt = $pdo->prepare('UPDATE account_data SET dance_visited = :visited WHERE hashed_username = :hu');
-	$stmt->execute(array(':visited' => 1, ':hu' => $_SESSION['hashed_username']));
+	require_once "pdo.php";
+	$stmt = $pdo->prepare('UPDATE account_data SET dance_visited = :visited WHERE user_id = :ui');
+	$stmt->execute(array(':visited' => 1, ':ui' => $_SESSION['user_id']));
 }
 
 ?>

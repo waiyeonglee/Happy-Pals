@@ -6,7 +6,7 @@ $new_msg = '';
 
 // Demand a SESSION
 if ( ! isset($_SESSION['account']) ) {
-    die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login.php">log in</a> to access this page!');
+    die('SESSION NOT FOUND: ACCESS DENIED<br/><br/>Please <a href="login">log in</a> to access this page!');
 }
 
 if ( isset($_SESSION['new_status']) ) {
@@ -14,19 +14,18 @@ if ( isset($_SESSION['new_status']) ) {
 	$new_msg = '<span style="font-size:80%"> (NEW USER)</span>';
 }
 
-
-
-$stmt = $pdo->prepare("SELECT * FROM account_data where hashed_username = :xyz");
-$stmt->execute(array(":xyz" => $_SESSION['hashed_username']));
+$stmt = $pdo->prepare("SELECT * FROM account_data where user_id = :xyz");
+$stmt->execute(array(":xyz" => $_SESSION['user_id']));
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
-$dv = htmlentities($row['dance_viewed']);
-$iv = htmlentities($row['image_viewed']);
-$mv = htmlentities($row['music_viewed']);
-$tv = htmlentities($row['talk_viewed']);
-console.log($row);
-$allv = false;
-if ($dv+$iv+$mv+$tv == 4) {$allv = true;}
 
+$gift1_bool = $row['gift1_bool']; // To disable button, future implementation
+$dv = $row['dance_visited'];
+$iv = $row['image_visited'];
+$mv = $row['music_visited'];
+$tv = $row['talk_visited'];
+
+$allv = false;
+if ($dv+$iv+$mv+$tv == 4) {$allv = true; $_SESSION['all_visited']=true;}
 
 ?>
 
@@ -109,7 +108,7 @@ if ($dv+$iv+$mv+$tv == 4) {$allv = true;}
       <div class="u-expanded u-opacity u-opacity-60 u-palette-2-dark-2 u-shape u-shape-rectangle"></div>
       <h1 class="u-text u-text-body-alt-color u-title u-text-1">Welcome <?echo $_SESSION['account'].$new_msg ?></h1>
       <p class="u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">Meet Bubbly Bot on the bottom right corner of your screen!</p>
-      <a href="Happy-Pals.html#carousel_9878" data-page-id="299888393" class="u-btn u-btn-round u-button-style u-radius-50 u-btn-1" data-animation-name="hinge" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">Scroll down</a>
+      <a href="#carousel_9878" data-page-id="299888393" class="u-btn u-btn-round u-button-style u-radius-50 u-btn-1" data-animation-name="hinge" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">Scroll down</a>
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-2" id="carousel_9878" data-image-width="1600" data-image-height="1067">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -132,13 +131,16 @@ if ($dv+$iv+$mv+$tv == 4) {$allv = true;}
             </thead>
             <tbody class="u-align-center u-table-body u-white u-table-body-1">
               <tr style="height: 79px;">
-                <td class="u-border-2 u-border-white u-table-cell u-table-cell-5"></td>
-                <td class="u-border-2 u-border-white u-table-cell u-table-cell-6"></td>
-                <td class="u-border-2 u-border-white u-table-cell u-table-cell-7"></td>
-                <td class="u-border-2 u-border-white u-table-cell u-table-cell-8"></td>
+                <td class="u-border-2 u-border-white u-table-cell u-table-cell-6"><?php if($dv==1) echo('✅'); ?></td>
+                <td class="u-border-2 u-border-white u-table-cell u-table-cell-6"><?php if($iv==1) echo('✅'); ?></td>
+                <td class="u-border-2 u-border-white u-table-cell u-table-cell-6"><?php if($mv==1) echo('✅'); ?></td>
+                <td class="u-border-2 u-border-white u-table-cell u-table-cell-6"><?php if($tv==1) echo('✅'); ?></td>
               </tr>
             </tbody>
           </table>
+		  <?php
+				if($allv==1) echo('<br><center><a href="mailto:someone@example.com?subject=Happy Pals Free Gift Claim" data-page-id="299888393" class="u-border-2 u-border-hover-palette-4-base u-btn u-btn-round u-button-style u-hover-palette-2-base u-none u-radius-50 u-btn-2" style="background-color: white;">Claim gift</a></center>');
+		  ?>
         </div>
       </div>
     </section>
@@ -215,7 +217,7 @@ if ($dv+$iv+$mv+$tv == 4) {$allv = true;}
             </div>
           </div>
         </div>
-        <a href="Happy-Pals.html#carousel_5405" data-page-id="299888393" class="u-border-2 u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50 u-btn-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">Bring me up</a>
+        <a href="#carousel_5405" data-page-id="299888393" class="u-border-2 u-border-hover-palette-1-base u-border-palette-1-base u-btn u-btn-round u-button-style u-hover-palette-1-base u-none u-radius-50 u-btn-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">Bring me up</a>
       </div>
     </section>
     

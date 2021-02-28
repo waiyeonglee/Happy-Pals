@@ -8,6 +8,14 @@ Focusing on the **Mental Health** issue, our team Ekspanyion, consisting of 3 me
 
 Several one-of-its-kind features have been implemented into this web application. These features include imagery meditation, soothing music playlist, fun destressing videos and videos for laughs! Users will find themselves immersed in a sanctuary of calmness. Everybody needs a rest from time to time. To enhance engagement with users, there is a point-based in-game reward system, in which users can exchange accumulated points for a cute plushie.
 
+## Table of Contents
+1. Features
+2. Technical Implementation
+3. Future Works
+4. Acknowledgments
+
+<br><br>
+
 ## Features
 
 ### Welcome & Login Page
@@ -47,11 +55,17 @@ Web Application
 
 AI Chatbot
 - The chatbot was build on SAP Cloud using SAP's Conversational AI toolbox. Custom messages were used to train the chatbot so that the chatbot knows to react to emotional keywords and common conversational keywords.
-<img src="readme_media/chatbot_structures.png" width="800">
+<img src="readme_media/chatbot_structure.png" width="800">
 
 <br><br>
 ## Future Works
 
-- Media resources can be obtained by partnership with govermental organisations that are in charge of mental health.
-- Add more features like games, proper tracking of the milestones, exercise buddies, improved chatbot logic.
-- Work hand in hand with mental health professionals to develop more relevant content and resources.
+- Media resources can be obtained by partnership with govermental organisations that are in charge of mental health
+- Add more features like games, proper tracking of the milestones, exercise buddies, improved chatbot logic
+- Work hand in hand with mental health professionals to develop more relevant content and resources
+
+<br><br>
+## Acknowledgements
+
+- We utilized https://nicepage.com/ to build our HTML pages and expedite the design and layout process
+- Our media that were used as samples in the web app are sourced from https://soundcloud.com/ and https://www.youtube.com/

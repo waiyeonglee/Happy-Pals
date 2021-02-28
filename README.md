@@ -1,4 +1,4 @@
-# Happy Pals <img src="" width="30" height="30">
+# Happy Pals <img src="readme_media/logo.jpeg" width="30" height="30">
 
 #### Proudly presented to you by Team Ekspansyion
 
@@ -18,25 +18,25 @@ Several one-of-its-kind features have been implemented into this web application
 
 Bubbly Bot is equipped with basic conversational skills and could sense various emotions from a user, including anger, saddness, happiness or depression. When the user prompts a depression, sad or lonely message, Bubbly Bot will provide emotional and motivational support via motivational quotes and a helpline. Whenver the user is feeling down and under, Bubbly Bot will be there to comfort the user until he/she cheers up, and acts as a companion to support the user through ups and downs.
 
-<img src="https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png" width="350" height="500">
+<img src="readme_media/chatbot.jpeg" width="350">
 
 ### Soothing Melodies :saxophone:
 
 Let your body move to the music as you relax and listen to our customized relaxing music playlist!
 
-<img src= "https://user-images.githubusercontent.com/66330052/109404812-ada80800-79a4-11eb-802d-6c1531cba2ee.png" width="350" height="500">
+<img src="readme_media/melodies.jpeg" width="350">
 
 ### Imagery Meditation :deciduous_tree:
 
 Nature at heart, these visuals aim to provide relaxation, meditation and calms you down 
 
-<img src= "https://user-images.githubusercontent.com/66330052/109404825-c7494f80-79a4-11eb-9b00-6646fc27a251.png" width="500" height="500">
+<img src="readme_media/imagery.jpeg" width="500">
 
 ### Just for Laughs/Dance Videos :laughing:
 
 Tune in to our Just for Laughs/Dance videos for a heartful of laughter and endless entertainment! 
 
-<img src= "https://user-images.githubusercontent.com/66330052/109404845-f95ab180-79a4-11eb-8837-b156f93fd82d.png" width="400" height="400">
+<img src="readme_media/dance.jpeg" width="500">
 
 # Technical Deployment
 

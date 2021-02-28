@@ -112,7 +112,7 @@ if ($dv+$iv+$mv+$tv == 4) {$allv = true; $_SESSION['all_visited']=true;}
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-2" id="carousel_9878" data-image-width="1600" data-image-height="1067">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-1">Redeem Your Free Pushie</h1>
+        <h1 class="u-text u-text-1">Redeem Your Free Plushie</h1>
         <div class="u-expanded-width u-table u-table-responsive u-table-1">
           <table class="u-table-entity u-table-entity-1">
             <colgroup>

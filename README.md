@@ -1,4 +1,4 @@
-# Happy-Pals ![image](https://user-images.githubusercontent.com/66330052/109404860-28712300-79a5-11eb-9684-e89f02a08ef4.png)
+# Happy Pals <img src="https://user-images.githubusercontent.com/66330052/109404860-28712300-79a5-11eb-9684-e89f02a08ef4.png/" width="30" height="30">
 
 #### Proudly presented to you by team Ekspansyion :stuck_out_tongue_closed_eyes:
 
@@ -51,4 +51,5 @@ https://soundcloud.com/weczjdn7rsto/fireworks-festival
 https://soundcloud.com/fengoku/sao-gracefully-piano
 https://soundcloud.com/king-kivo/fmab_rain-mp3
 https://soundcloud.com/ryan-linardy/the-path-of-the-wind-totoro-ost-joe-hisaishipiano-ver
+![Uploading image.png…]()
 

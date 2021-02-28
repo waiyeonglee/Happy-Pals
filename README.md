@@ -1,4 +1,5 @@
-# Happy-Pals :laughing:
+# Happy-Pals ![image](https://user-images.githubusercontent.com/66330052/109404860-28712300-79a5-11eb-9684-e89f02a08ef4.png)
+
 #### Proudly presented to you by team Ekspansyion :stuck_out_tongue_closed_eyes:
 
 COVID-19 has affected every individual’s everyday lifestyle in one way or the other including personal and professional life, mental wellbeing, interaction with families, social life, etc. Focusing on the **Mental Health** issue, our team Ekspanyion, consisting of 3 members, *Philip Lee Hann Yung, Lee Wai Yeong* and *Lee Jinhen*, embarked on a journey of a lifetime to play our part in combating this issue by spurring our ideas via the SAP Cloud Track. Using PHP, HTML, CSS and JavaScript, we have developed a web application that caters to the mental wellbeing of our users. Our app showcases many ways to release stress and find out more about your mental health. The integrated chatbot within our web app is developed using SAP's proprietary Conversational AI platform.
@@ -11,7 +12,7 @@ Several one-of-its-kind features have been implemented into this web application
 
 "Life is a first impression. You get one shot at it." As the saying goes, we have customized our welcome page as well as our login page to enhance the user's experience.
 
-<img src= https://user-images.githubusercontent.com/66330052/109404539-15108880-79a2-11eb-81d3-1f6a6e3a2098.png" width="350" height="500">
+<img src= "https://user-images.githubusercontent.com/66330052/109404832-dcbe7980-79a4-11eb-9e0a-4d74e63fd114.png" width="350" height="500">
 
 ### Chatbot - Bubbly Bot 
 
@@ -23,19 +24,19 @@ Bubbly Bot is equipped with basic conversational skills and could sense various 
 
 Let your body move to the music as you relax and listen to our customized relaxing music playlist!
 
-
+<img src= "https://user-images.githubusercontent.com/66330052/109404812-ada80800-79a4-11eb-802d-6c1531cba2ee.png" width="350" height="500">
 
 ### Imagery Meditation :deciduous_tree:
 
 Nature at heart, these visuals aim to provide relaxation, meditation and calms you down 
 
-
+<img src= "https://user-images.githubusercontent.com/66330052/109404825-c7494f80-79a4-11eb-9b00-6646fc27a251.png" width="350" height="500">
 
 ### Just for Laughs/Dance Videos :laughing:
 
 Tune in to our Just for Laughs/Dance videos for a heartful of laughter and endless entertainment! 
 
-
+<img src= "https://user-images.githubusercontent.com/66330052/109404845-f95ab180-79a4-11eb-8837-b156f93fd82d.png" width="350" height="500">
 
 # Technical Deployment
 

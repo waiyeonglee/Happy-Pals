@@ -35,7 +35,7 @@ Nature at heart, these visuals aim to provide relaxation, meditation and calms y
 
 Tune in to our Just for Laughs videos for a heartful of laughter and endless entertainment! 
 
-
+## Credits
 
 [Depression Statistics](https://www.google.com/search?q=mental+health+age-groups&rlz=1C1CHBF_enMY868MY868&oq=mental+health+age-groups&aqs=chrome..69i57j0i22i30l4j0i390l3.6415j0j7&sourceid=chrome&ie=UTF-8)
 

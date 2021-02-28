@@ -1,5 +1,5 @@
 # Happy Pals &nbsp;<img src="readme_media/logo.jpeg" width="30" height="30">
-https://happy-pals.appspot.com/ bunny
+https://happy-pals.appspot.com/
 
 #### Proudly presented to you by Team Ekspansyion
 

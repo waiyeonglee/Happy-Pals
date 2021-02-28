@@ -1,4 +1,4 @@
-# Happy Pals <img src="readme_media/logo.jpeg" width="30" height="30">
+# Happy Pals &nbsp;<img src="readme_media/logo.jpeg" width="30" height="30">
 
 #### Proudly presented to you by Team Ekspansyion
 
@@ -38,18 +38,20 @@ Tune in to our Just for Laughs/Dance videos for a heartful of laughter and endle
 
 <img src="readme_media/dance.jpeg" width="500">
 
-# Technical Deployment
 
-1. 
+## Technical Implementation
+
+Web Application
+- The web app is built using HTML, CSS, Javascript and PHP to handle special interactions with the use.
+- It then deployed on Google Cloud Platform's Compute App Engine to be hosted as a Apache server
+- The MySQL instance on Google Cloud Platform did not interface well with GCP's Compute App Enginer so we ended up using FreeMySQLhosting.net to host the MySQL server.
+- Login credentials are stored in their hashed form to ensure that the individual in non-traceable
+<img src="readme_media/hashed.png" width="900">
+
+AI Chatbot
+- The chatbot was build on SAP Cloud using SAP's Conversational AI toolbox. Custom messages were used to train the chatbot so that the chatbot knows to react to emotional keywords and common conversational keywords.
+
+
+## Future Works
 
 [Depression Statistics](https://www.google.com/search?q=mental+health+age-groups&rlz=1C1CHBF_enMY868MY868&oq=mental+health+age-groups&aqs=chrome..69i57j0i22i30l4j0i390l3.6415j0j7&sourceid=chrome&ie=UTF-8)
-
-<hr>
-
-
-https://soundcloud.com/anamanaguchi/merry-christmas-mr-lawrence
-https://soundcloud.com/weczjdn7rsto/fireworks-festival
-https://soundcloud.com/fengoku/sao-gracefully-piano
-https://soundcloud.com/king-kivo/fmab_rain-mp3
-https://soundcloud.com/ryan-linardy/the-path-of-the-wind-totoro-ost-joe-hisaishipiano-ver
-

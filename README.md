@@ -11,7 +11,7 @@ Several one-of-its-kind features have been implemented into this web application
 
 "Life is a first impression. You get one shot at it." As the saying goes, we have customized our welcome page as well as our login page to enhance the user's experience.
 
-
+<img src= https://user-images.githubusercontent.com/66330052/109404539-15108880-79a2-11eb-81d3-1f6a6e3a2098.png" width="350" height="500">
 
 ### Chatbot - Bubbly Bot 
 
@@ -19,7 +19,7 @@ Bubbly Bot is equipped with basic conversational skills and could sense various 
 
 <img src="https://user-images.githubusercontent.com/66330052/109394928-9b0dde80-7964-11eb-8f4b-80a186eb9071.png" width="350" height="500">
 
-### Soothing Music Playlist :saxophone:
+### Soothing Melodies :saxophone:
 
 Let your body move to the music as you relax and listen to our customized relaxing music playlist!
 
@@ -31,11 +31,15 @@ Nature at heart, these visuals aim to provide relaxation, meditation and calms y
 
 
 
-### Just for Laughs Videos :laughing:
+### Just for Laughs/Dance Videos :laughing:
 
-Tune in to our Just for Laughs videos for a heartful of laughter and endless entertainment! 
+Tune in to our Just for Laughs/Dance videos for a heartful of laughter and endless entertainment! 
 
-## Credits
+
+
+# Technical Deployment
+
+1. 
 
 [Depression Statistics](https://www.google.com/search?q=mental+health+age-groups&rlz=1C1CHBF_enMY868MY868&oq=mental+health+age-groups&aqs=chrome..69i57j0i22i30l4j0i390l3.6415j0j7&sourceid=chrome&ie=UTF-8)
 

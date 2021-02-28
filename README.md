@@ -8,7 +8,10 @@ Focusing on the **Mental Health** issue, our team Ekspanyion, consisting of 3 me
 
 Several one-of-its-kind features have been implemented into this web application. These features include imagery meditation, soothing music playlist, fun destressing videos and videos for laughs! Users will find themselves immersed in a sanctuary of calmness. Everybody needs a rest from time to time. To enhance engagement with users, there is a point-based in-game reward system, in which users can exchange accumulated points for a cute plushie.
 
+<br>
+
 ## Table of Contents
+
 1. Features
 2. Technical Implementation
 3. Future Works
@@ -68,4 +71,4 @@ AI Chatbot
 ## Acknowledgements
 
 - We utilized https://nicepage.com/ to build our HTML pages and expedite the design and layout process
-- Our media that were used as samples in the web app are sourced from https://soundcloud.com/ and https://www.youtube.com/
+- Our sample media used in the web app are sourced from https://soundcloud.com/ and https://www.youtube.com/

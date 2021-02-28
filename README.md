@@ -65,6 +65,9 @@ Web Application
 
 AI Chatbot
 - The chatbot was build on SAP Cloud using SAP's Conversational AI toolbox. Custom messages were used to train the chatbot so that the chatbot knows to react to emotional keywords and common conversational keywords.
+- The bot was trained using various intents and organized the logic behind the bot's responses and a fallback scenario in which the bot is unable to decipher the user's prompt.
+- The log feed is utilized to improvise the AI, to improve it accuracy in predicting intent and thus the correct response.
+- AI bot integrated onto website via Webchat.
 <img src="readme_media/chatbot_structure.png" width="800">
 
 <br><br>

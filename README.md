@@ -30,13 +30,13 @@ Let your body move to the music as you relax and listen to our customized relaxi
 
 Nature at heart, these visuals aim to provide relaxation, meditation and calms you down 
 
-<img src= "https://user-images.githubusercontent.com/66330052/109404825-c7494f80-79a4-11eb-9b00-6646fc27a251.png" width="350" height="500">
+<img src= "https://user-images.githubusercontent.com/66330052/109404825-c7494f80-79a4-11eb-9b00-6646fc27a251.png" width="500" height="500">
 
 ### Just for Laughs/Dance Videos :laughing:
 
 Tune in to our Just for Laughs/Dance videos for a heartful of laughter and endless entertainment! 
 
-<img src= "https://user-images.githubusercontent.com/66330052/109404845-f95ab180-79a4-11eb-8837-b156f93fd82d.png" width="600" height="500">
+<img src= "https://user-images.githubusercontent.com/66330052/109404845-f95ab180-79a4-11eb-8837-b156f93fd82d.png" width="400" height="400">
 
 # Technical Deployment
 
